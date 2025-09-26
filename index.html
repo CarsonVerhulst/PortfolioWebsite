@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carson Verhulst - Portfolio</title>
+    <link rel="icon" type="image/png" href="images/profile/devsite.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Fixed Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">CV</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="hero-content">
+                    <h1 class="hero-title">Carson Verhulst</h1>
+                    <p class="hero-subtitle">Data Scientist and Software Engineer</p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">View Work</a>
+                        <a href="https://tally.so/r/me4y9l" target="_blank" class="btn btn-outline">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/profile/IMG_3662.jpg" alt="Carson Verhulst">
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Info Section -->
+    <section class="quick-info">
+        <div class="container">
+            <div class="info-items">
+                <div class="info-item">
+                    <span class="info-icon">📍</span>
+                    <span class="info-text">Minneapolis / Twin Cities</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">🎓</span>
+                    <span class="info-text">University of Minnesota - Bachelors of Science in Statistics</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a software engineer interested in data driven, ML powered products and shipping polished side projects. I co-founded DigiTech Dynamics, where I've shipped 5+ mobile apps to 60k+ downloads and ~5k MAU. I'm a Statistics major with a Computer Science minor at the University of Minnesota.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">60k+</span>
+                        <span class="stat-label">App Downloads</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5k+</span>
+                        <span class="stat-label">Monthly Active Users</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Apps Published</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-icon">📱</div>
+                    <h3>Mobile Development</h3>
+                    <p>Swift, SwiftUI, UIKit, iOS, Xcode, Firebase, Google Analytics</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🤖</div>
+                    <h3>Machine Learning</h3>
+                    <p>Statistical ML, Computer Vision, YOLO, Core ML, NumPy, scikit-learn, pandas</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">📊</div>
+                    <h3>Data Science & Analytics</h3>
+                    <p>Python, R, SQL, Tableau, Power BI, Regression Analysis, Statistical Computing</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">💻</div>
+                    <h3>Full Stack Development</h3>
+                    <p>JavaScript, Java, Go, C, Spring Boot, Node.js, REST APIs</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">☁️</div>
+                    <h3>Cloud & DevOps</h3>
+                    <p>AWS, Google Cloud, Docker, Git, CI/CD, Agile, Scrum</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">🧪</div>
+                    <h3>Testing & Methodologies</h3>
+                    <p>Unit Testing, Jest, JUnit, Mockito, DevOps, RESTful APIs, OOP</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Portfolio</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="data">Data Science</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/GoLiveSim.png" alt="Go Live Simulator">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Go Live Simulator</h3>
+                        <p>iOS app for live streaming simulation and content creation.</p>
+                        <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">37K+ Downloads · 3K+ MAU</p>
+                        <div class="portfolio-tags">
+                            <span>iOS</span>
+                            <span>Swift</span>
+                            <span>Firebase</span>
+                            <span>Google Analytics</span>
+                        </div>
+                        <a href="https://apps.apple.com/us/app/go-live-simulator/id6504121037" target="_blank" class="portfolio-link">View on App Store →</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/DrinkSmartLogo 2.PNG" alt="Drink Smart - Alcohol Tracker">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Drink Smart - Alcohol Tracker</h3>
+                        <p>iOS app for responsible alcohol consumption tracking and insights</p>
+                        <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">7K+ Downloads · 700+ MAU</p>
+                        <div class="portfolio-tags">
+                            <span>iOS</span>
+                            <span>Swift</span>
+                            <span>Firebase</span>
+                            <span>Google Analytics</span>
+                        </div>
+                        <a href="https://apps.apple.com/us/app/drink-smart-alcohol-tracker/id6744004241" target="_blank" class="portfolio-link">View on App Store →</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/FuelLab.png" alt="FuelLab - Fitness Tracker">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>FuelLab - Fitness Tracker</h3>
+                        <p>Comprehensive fitness and nutrition tracking app for iOS</p>
+                        <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">6K+ Downloads · 500+ MAU</p>
+                        <div class="portfolio-tags">
+                            <span>iOS</span>
+                            <span>Swift</span>
+                            <span>Firebase</span>
+                            <span>Google Analytics</span>
+                        </div>
+                        <a href="https://apps.apple.com/us/app/fuellab-fitness-tracker/id6751203889" target="_blank" class="portfolio-link">View on App Store →</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/CareerBoost.png" alt="CareerBoost AI Resume Builder">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>CareerBoost AI Resume Builder</h3>
+                        <p>AI-powered resume builder to help land your dream job</p>
+                        <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">3K+ Downloads · 250+ MAU</p>
+                        <div class="portfolio-tags">
+                            <span>iOS</span>
+                            <span>Swift</span>
+                            <span>AI/ML</span>
+                            <span>Firebase</span>
+                        </div>
+                        <a href="https://apps.apple.com/us/app/careerboost-ai-resume-builder/id6740757767?platform=iphone" target="_blank" class="portfolio-link">View on App Store →</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="mobile">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/PhotoParty.png" alt="Photo Party - Group Games">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Photo Party - Group Games</h3>
+                        <p>Interactive party game app for groups using photo challenges</p>
+                        <p style="font-size: 0.9rem; color: #666; margin-top: 0.5rem;">5K+ Downloads · 400+ MAU</p>
+                        <div class="portfolio-tags">
+                            <span>iOS</span>
+                            <span>Swift</span>
+                            <span>Firebase</span>
+                            <span>Google Analytics</span>
+                        </div>
+                        <a href="https://apps.apple.com/us/app/photo-party-group-games/id6749279565?platform=iphone" target="_blank" class="portfolio-link">View on App Store →</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <div class="portfolio-image">
+                        <img src="images/portfolio/Digitech.jpg" alt="DigiTechDynamics">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>DigiTechDynamics Website</h3>
+                        <p>Company website showcasing our mobile app portfolio and team</p>
+                        <div class="portfolio-tags">
+                            <span>React</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://digitechdynamics.com/#/team" target="_blank" class="portfolio-link">Visit Website →</a>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="data">
+                    <div class="portfolio-image">
+                        <div class="placeholder-image">📊 Analytics Dashboard</div>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>App Monetization Analytics Dashboard</h3>
+                        <p>End-to-end analytics pipeline ingesting Firebase, RevenueCat, and App Store Connect data with ETL orchestration, dbt transformations, and KPI dashboards for CAC/LTV analysis</p>
+                        <div class="portfolio-tags">
+                            <span>Python</span>
+                            <span>PostgreSQL</span>
+                            <span>dbt</span>
+                            <span>Airflow</span>
+                            <span>Streamlit</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>I'm currently available for full time work and open to discussing new opportunities.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-label">Email:</span>
+                            <a href="mailto:carson.c.verhulst@gmail.com">carson.c.verhulst@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Phone:</span>
+                            <a href="tel:+17252720553">+1 (725) 272-0553</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Location:</span>
+                            <span>Minneapolis, MN</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/carson-verhulst-a927481b9/" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="https://github.com/CarsonVerhulst" target="_blank" aria-label="GitHub">GitHub</a>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <a href="https://tally.so/r/me4y9l" target="_blank" class="btn btn-primary btn-large">Send Message</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
