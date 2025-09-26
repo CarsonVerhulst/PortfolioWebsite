@@ -28,7 +28,7 @@ jobs:
         uses: actions/configure-pages@v4
 
       - name: Add CNAME
-        run: echo 'carsonverhulst.com' > CNAME
+        run: echo 'www.carsonverhulst.com' > CNAME
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
