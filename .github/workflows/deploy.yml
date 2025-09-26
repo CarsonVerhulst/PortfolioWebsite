@@ -15,45 +15,26 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
 
-      - name: Install deps (if package.json exists)
-        run: |
-          if [ -f package.json ]; then
-            npm ci || npm install
-          fi
-
-      # Build if there's a build script; otherwise package static files
-      - name: Build (or prepare static site)
-        run: |
-          if [ -f package.json ] && npm run -s build; then
-            if [ -d dist ]; then echo dist > .artifact-path; elif [ -d build ]; then echo build > .artifact-path; else echo dist > .artifact-path; fi
-          else
-            mkdir -p _site
-            rsync -av --delete --exclude '.git*' --exclude 'node_modules' --exclude '.github' ./ _site/
-            echo _site > .artifact-path
-          fi
+      - name: Add CNAME
+        run: echo 'carsonverhulst.com' > CNAME
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: $(cat .artifact-path)
+          path: '.'
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - id: deployment
+      - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
